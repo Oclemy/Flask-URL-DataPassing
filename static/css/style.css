@@ -1,0 +1,12 @@
+
+ul {
+    list-style: none;
+}
+ul li {
+    width: 50%;
+    float: left;
+    border-right: 1px dotted #CCC;
+    padding: 2px;
+}
+
+

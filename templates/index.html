@@ -1,0 +1,77 @@
+<!--
+    Our template.
+    Contains both jinja expressions and html code
+    Data passed from backend will be rendered here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site_title }}</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/materialize.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ url_for('static',filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+
+<body>
+<!--NAVIGATION BAR-->
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo">{{ site_title }}</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <a href="" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<!--CONTAINER-->
+<div class="container">
+    <h1 class="header center orange-text">{{ header }}</h1>
+    <h4 class="center light-blue-text">{{ sub_header }}</h4>
+<h5 class="center">{{ description }}</h5>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--FOOTER-->
+<footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
+                    our full time job.</p>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Languages</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Javascript</a></li>
+                    <li><a class="white-text" href="#!">PHP</a></li>
+                    <li><a class="white-text" href="#!">Java</a></li>
+                    <li><a class="white-text" href="#!">C#</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Facebook</a></li>
+                    <li><a class="white-text" href="#!">Twitter</a></li>
+                    <li><a class="white-text" href="#!">Google Plus</a></li>
+                    <li><a class="white-text" href="#!">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
